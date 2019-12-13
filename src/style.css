@@ -1,0 +1,35 @@
+:root {
+    --mag-main-color: #7b34b1;
+    --mag-secondary-color: #f05656;
+}
+
+.mag-bg-primary {
+    background-color: var(--mag-main-color);
+}
+
+.mag-border-bottom-secondary {
+    border-bottom: var(--mag-secondary-color) solid .1875rem;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand img {
+        width: 8.75rem;
+        height: auto;
+    }
+
+    .mag-nav-btn-group {
+        display: grid;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .mag-nav-btn-group .btn {
+        border-radius: .25rem!important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-brand {
+        margin-right: 6.25rem;
+    }
+}
